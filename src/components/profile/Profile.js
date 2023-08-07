@@ -1,12 +1,13 @@
-import { UserInfo } from "./UserInfo";
-import { UserStatistic } from "./UserStatistic";
+import { UserInfo } from "./userinfo/UserInfo";
+import { UserStatistic } from "./user_statistic/UserStatistic";
 import user from './user.json';
+import { Container } from "./Profile.styled";
 
 export const Profile = ({}) => {
   return (
-    <div>
+    <Container>
       <UserInfo  items={user}/>
       <UserStatistic  items={user}/>
-    </div>
+    </Container>
   );
 };
