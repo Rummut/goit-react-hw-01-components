@@ -11,7 +11,6 @@ export const ItemsList = styled.li`
     align-items: center;
     color: #a7b1ba;
     padding: 20px;
-}
 `;
 
 export const StatisticNumb = styled.span`
