@@ -1,4 +1,9 @@
-import { UserImage, UserTitle, UserAbout, UserContainer } from './Userinfo.styled';
+import {
+  UserImage,
+  UserTitle,
+  UserAbout,
+  UserContainer,
+} from './Userinfo.styled';
 
 export const UserInfo = ({ items: { avatar, username, tag, location } }) => {
   return (

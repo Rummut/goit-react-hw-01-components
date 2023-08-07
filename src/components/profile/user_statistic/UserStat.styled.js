@@ -6,14 +6,14 @@ export const List = styled.ul`
   gap: 20px;
 `;
 export const ItemsList = styled.li`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #a7b1ba;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #a7b1ba;
+  padding: 20px;
 `;
 
 export const StatisticNumb = styled.span`
-font-weight: 700;
-color: #485667;
-`
+  font-weight: 700;
+  color: #485667;
+`;

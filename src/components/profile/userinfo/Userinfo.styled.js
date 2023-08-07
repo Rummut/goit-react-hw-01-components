@@ -3,8 +3,7 @@ import { styled } from 'styled-components';
 export const UserContainer = styled.div`
 display: flex;
 flex-direction: column;
-align-items: center;
-}`;
+align-items: center;`;
 
 export const UserImage = styled.img`
   display: block;
@@ -19,5 +18,6 @@ export const UserTitle = styled.h2`
 `;
 
 export const UserAbout = styled.p`
-margin-bottom: 10px;
-color: #a7b1ba `;
+  margin-bottom: 10px;
+  color: #a7b1ba;
+`;

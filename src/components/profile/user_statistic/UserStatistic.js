@@ -1,6 +1,10 @@
-import { List, ItemsList, StatisticNumb } from "./UserStat.styled";
+import { List, ItemsList, StatisticNumb } from './UserStat.styled';
 
-export const UserStatistic = ({ items: { stats: { followers, views, likes } } }) => {
+export const UserStatistic = ({
+  items: {
+    stats: { followers, views, likes },
+  },
+}) => {
   return (
     <List>
       <ItemsList>
@@ -15,6 +19,6 @@ export const UserStatistic = ({ items: { stats: { followers, views, likes } } })
         <span>Likes</span>
         <StatisticNumb>{likes}</StatisticNumb>
       </ItemsList>
-   </List>
+    </List>
   );
 };
