@@ -11,7 +11,7 @@ export const UserInfo = ({ items: { avatar, username, tag, location } }) => {
       <UserImage src={avatar} alt="User avatar" />
       <UserTitle>{username}</UserTitle>
       <UserAbout>{tag}</UserAbout>
-      <UserAbout>{location}</UserAbout>
+      <UserAbout>{location}</UserAbout>sxs
     </UserContainer>
   );
 };
