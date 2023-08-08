@@ -4,6 +4,7 @@ import {
   UserAbout,
   UserContainer,
 } from './Userinfo.styled';
+import PropTypes from "prop-types";
 
 export const UserInfo = ({ items: { avatar, username, tag, location } }) => {
   return (
@@ -14,4 +15,11 @@ export const UserInfo = ({ items: { avatar, username, tag, location } }) => {
       <UserAbout>{location}</UserAbout>sxs
     </UserContainer>
   );
+};
+
+UserInfo.propTypes = {
+  username: PropTypes.string,
+  avatar: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string
 };
