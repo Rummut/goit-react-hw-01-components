@@ -1,9 +1,10 @@
 import {
-    StatContainer,
+  StatContainer,
   StatisticItem,
   StatisticList,
   StatisticTitle,
 } from './Statistic.styled';
+import PropTypes from 'prop-types';
 
 export const Statistics = ({ title, stats }) => {
   return (
@@ -19,4 +20,12 @@ export const Statistics = ({ title, stats }) => {
       </StatisticItem>
     </StatContainer>
   );
+};
+
+Statistics.propTypes = {
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ),
 };
