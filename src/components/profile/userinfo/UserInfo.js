@@ -4,7 +4,7 @@ import {
   UserAbout,
   UserContainer,
 } from './Userinfo.styled';
-
+import PropTypes from 'prop-types';
 export const UserInfo = ({ items: { avatar, username, tag, location } }) => {
   return (
     <UserContainer>
@@ -16,9 +16,11 @@ export const UserInfo = ({ items: { avatar, username, tag, location } }) => {
   );
 };
 
-// UserInfo.propTypes = {
-//   username: PropTypes.string,
-//   avatar: PropTypes.string,
-//   tag: PropTypes.string,
-//   location: PropTypes.string
-// };
+UserInfo.propTypes = {
+  items: PropTypes.shape({
+    avatar: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+  }),
+};
